@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+    <config>
+        <tabs>
+            <sharerails module="pushmessage">
+                <label>Sharerails</label>
+                <sort_order>10</sort_order>
+            </sharerails>
+        </tabs>
+        <sections>
+
+
+          <sr_pushmessage translate="label" module="pushmessage">
+                <label>Sharerails Notifications</label>
+                <tab>sharerails</tab>
+                <sort_order>10</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+                <groups>
+                    <apiconfig translate="label">
+                        <label>Sharerails Notifications Settings</label>
+                        <comment>
+                          <![CDATA[
+                    	  <div style="text-align: left;">                    		  
+                          <div>Before you can fill in the settings below you must create an account on <a href="http://sharerails.com/register" target="_blank">sharerails.com</a> and install the magento plugin</div>
+                          <span>If you have any questions or comments, please <a target="_blank" href="http://www.sharerails.com/contact" title="Click to send a question">leave your feedback here</a>.</span>
+                    	    <br/><span class="notice">All settings must match exactly as provided by sharerails.com</span>
+                       <hr style="margin:10px 0px;"/>
+                       </div>
+                	  ]]>
+                      </comment>
+                      <sort_order>10</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                        <fields>
+                            <!-- api key -->
+                            <storename translate="label">
+                                <label>Store Name</label>
+                                <comment>
+                                    <![CDATA[Enter store name above.]]>
+                                </comment>
+                                <frontend_type>text</frontend_type>
+                                <!--<validate>validate-alphanum</validate>-->
+                                <sort_order>20</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </storename>
+                            <!-- secret key -->
+                            <secret translate="label">
+                                <label>Secret</label>
+                                <comment>
+                                    <![CDATA[<span class="notice">Only alphanumeric </span>]]>
+                                </comment>
+                                <frontend_type>text</frontend_type>
+                                <validate>validate-alphanum</validate>
+                                <sort_order>30</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </secret>
+                            <clientid translate="label">
+                                <label>Client ID</label>
+                                <comment>
+                                    <![CDATA[ Enter client id. <span class="notice">Only alphanumeric </span>]]>
+                                </comment>
+                                <frontend_type>text</frontend_type>
+                                <sort_order>40</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </clientid>
+                            <!-- enable or not -->
+                            <!--<active>-->
+                                <!--<label>Enable</label>-->
+                                <!--<sort_order>10</sort_order>-->
+                                <!--<frontend_type>select</frontend_type>-->
+                                <!--<source_model>-->
+                                    <!--adminhtml/system_config_source_yesno-->
+                                <!--</source_model>-->
+                                <!--<show_in_default>1</show_in_default>-->
+                                <!--<show_in_website>1</show_in_website>-->
+                                <!--<show_in_store>1</show_in_store>-->
+                            <!--</active>-->
+                        </fields>
+
+
+                    </apiconfig>
+                </groups>
+            </sr_pushmessage>
+        </sections>
+    </config>

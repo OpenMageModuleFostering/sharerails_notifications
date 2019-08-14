@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>sharerails_notifications</name>
+    <version>1.0.14</version>
+    <stability>stable</stability>
+    <license>GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>ShareRails is a realtime tool that helps business owners increase the exposure of their popular products.</summary>
+    <description>ShareRails will broadcast customers shopping activity of your users to increase the exposure of the popular products of your online store. What&amp;#x2019;s more, the tool will help encourage and promote your sales by showing the popular products to other customers.</description>
+    <notes>First Release</notes>
+    <authors><author><name>James</name><user>james</user><email>james.butler@dimicho.com</email></author></authors>
+    <date>2014-09-08</date>
+    <time>01:10:16</time>
+    <contents><target name="magecommunity"><dir name="sharerails"><dir name="pushmessage"><dir name="block"><file name="Srjs.php" hash="9ee607f392131fafada3d110ab5f3fe0"/></dir><dir name="helper"><file name="Data.php" hash="8302ac2f13a12c3e1350ccd0949fb991"/></dir><dir name="model"><file name="Observer.php" hash="3eeacb30aa12ce312ac82d460f6abda8"/><dir name="resource"><file name="Setup.php" hash="376920e3bd66a72b6bcaa47fb54d5bb2"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="534776f08ed2f6b9381d6dc0c2627a20"/><file name="config.xml" hash="df1db11803cb98f265d433aa942684f9"/><file name="system.xml" hash="7c35991520e2ff6849bc361002a5e856"/></dir><dir name="sql"><dir name="pushmessage_setup"><file name="mysql4-install-1.0.0.php" hash="11cdd79bb06b3ac6a846379eabe4f718"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="sharerails_pushmessage"><file name="srjs.phtml" hash="3ce92040fc7bce1641630261bf30947d"/></dir></dir><dir name="layout"><file name="sharerails_pushmessage.xml" hash="b77185b53c9a3e0d606348e080be1d75"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="sharerails_pushmessage.xml" hash="c9cc0f3e455c7cd8f4842d6c6cbf2cd0"/></dir></target><target name="magelib"><dir name="Sharerails"><file name="ShareRails.php" hash="a5b4ca96959c093514782b752a8a5af1"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+    <config>
+        <modules>
+            <Sharerails_PushMessage>
+                <version>1.0.7</version>
+            </Sharerails_PushMessage>
+        </modules>
+
+      <!-- global -->
+        <global>
+
+
+          <events>
+            <admin_system_config_changed_section_sr_pushmessage>
+              <observers>
+
+                <Sharerails_PushMessage_Model_Observer>
+                  <type>singleton</type>
+                  <class>Sharerails_PushMessage_Model_Observer</class>
+                  <method>configChanged</method>
+                </Sharerails_PushMessage_Model_Observer>
+
+              </observers>
+            </admin_system_config_changed_section_sr_pushmessage>
+
+          </events>
+
+          <!-- block -->
+            <blocks>
+                <sharerails_pushmessage>
+                    <class>Sharerails_PushMessage_Block</class>
+                </sharerails_pushmessage>
+            </blocks>
+            <!-- end of block -->
+            <!-- start of helpers -->
+            <helpers>
+                <pushmessage>
+                    <class>Sharerails_PushMessage_Helper</class>
+                </pushmessage>
+            </helpers>
+            <!-- end of helpers -->
+
+            <!-- resources -->
+            <resources>
+                <pushmessage_setup>
+                    <setup>
+                        <module>Sharerails_PushMessage</module>
+                        <class>Sharerails_PushMessage_Model_Resource_Setup</class>
+                    </setup>
+                </pushmessage_setup>
+            </resources>
+            <!-- end of resources -->
+        </global>
+        <frontend>
+            <events>
+                <checkout_cart_product_add_after>
+                    <observers>
+                        <Sharerails_PushMessage_Model_Observer>
+                            <type>singleton</type>
+                            <class>Sharerails_PushMessage_Model_Observer</class>
+                            <method>pushMessageAddProduct</method>
+                        </Sharerails_PushMessage_Model_Observer>
+                    </observers>
+                </checkout_cart_product_add_after>
+
+                <sales_order_place_after>
+                    <observers>
+                        <Sharerails_PushMessage_Model_Observer>
+                            <type>singleton</type>
+                            <class>Sharerails_PushMessage_Model_Observer</class>
+                            <method>placeOrder</method>
+                        </Sharerails_PushMessage_Model_Observer>
+                    </observers>
+                </sales_order_place_after>
+            </events>
+
+            <layout>
+                <updates>
+                    <sharerails_pushmessage module="Sharerails_PushMessage">
+                        <file>sharerails_pushmessage.xml</file>
+                    </sharerails_pushmessage>
+                </updates>
+            </layout>
+        </frontend>
+        <!-- default config value -->
+        <!--<default>-->
+            <!--<sr_pushmessage>-->
+                <!--<apiconfig>-->
+                    <!--<storename><![CDATA[sharerails.com]]></storename>-->
+                    <!--<secret><![CDATA[cea730910f604d399e4a968318cdd8a3]]></secret>-->
+                    <!--<clientid><![CDATA[UJtoQLNRQ0SuaWTVJD6vfA]]></clientid>-->
+                <!--</apiconfig>-->
+            <!--</sr_pushmessage>-->
+        <!--</default>-->
+</config>

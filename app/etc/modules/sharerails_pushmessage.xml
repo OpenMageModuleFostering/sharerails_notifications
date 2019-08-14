@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+    <config>
+        <modules>
+            <Sharerails_PushMessage>
+                <active>true</active>
+                <codePool>community</codePool>
+            </Sharerails_PushMessage>
+        </modules>
+    </config>

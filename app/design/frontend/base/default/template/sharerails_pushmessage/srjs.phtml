@@ -1,0 +1,26 @@
+<!--/* @var $this Sharerails_Pushmessage_Block_Js */-->
+<script>
+
+    window.shareRailsAsync = function () {
+        var inited = true,
+            secret = "<?= Mage::helper('pushmessage')->getCoreConfig('storename'); ?>",
+            clientID = "<?= Mage::helper('pushmessage')->getCoreConfig('clientid');?>",
+  host = "www.sharerails.com";
+  ShareRails.init({
+  client: clientID,
+  store: secret,
+  host:  host,
+  autoRender: true
+  })
+  };
+
+  (function (d, s, id) {
+
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) { return; }
+  js = d.createElement(s); js.id = id;
+  js.src = "http://www.sharerails.com/scripts/core.js";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'sharerails-js'));
+
+</script>

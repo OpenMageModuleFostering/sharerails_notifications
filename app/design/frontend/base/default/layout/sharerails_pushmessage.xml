@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+    <layout>
+        <default>
+            <!-- name of the block to be added -->
+            <reference name="before_body_end">
+                <!--
+                    here we define our new block and template
+                    to be added to 'before_body_end'
+                -->
+                <block type="sharerails_pushmessage/srjs"
+                       name="sharerails_pushmessage_srjs"
+                       template="sharerails_pushmessage/srjs.phtml" />
+            </reference>
+        </default>
+    </layout>
