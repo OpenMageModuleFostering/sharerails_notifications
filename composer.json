@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/sharerails_notifications",
+    "name": "OpenMageModuleFostering\/sharerails_notifications",
     "type": "magento-module",
     "license": "GPL",
     "homepage": "",
     "description": "ShareRails is a realtime tool that helps business owners increase the exposure of their popular products.",
     "authors": [
-    {
-        "name": "James",
-        "email": "james.butler@dimicho.com"
-    }
-],
+        {
+            "name": "James",
+            "email": "james.butler@dimicho.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
